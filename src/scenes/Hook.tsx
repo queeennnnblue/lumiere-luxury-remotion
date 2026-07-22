@@ -5,7 +5,7 @@ import {
   useCurrentFrame,
 } from 'remotion';
 import {COLORS, FONTS} from '../theme';
-import {Rise, RingIcon, Sparkle, Divider, useAppear} from '../ui/atoms';
+import {Rise, RingIcon, Sparkle, Divider, Logo, useAppear} from '../ui/atoms';
 
 // الخُطّاف: خلفية عنّابية داكنة + سؤال صادم
 export const Hook: React.FC = () => {
@@ -46,9 +46,14 @@ export const Hook: React.FC = () => {
           style={{
             opacity: ringIn,
             transform: `translateY(${(1 - ringIn) * 40}px) scale(${0.8 + ringIn * 0.2})`,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 30,
           }}
         >
-          <RingIcon size={190} stroke={COLORS.paperBag} gem={COLORS.powderBlue} />
+          <Logo width={430} dark />
+          <RingIcon size={150} stroke={COLORS.paperBag} gem={COLORS.powderBlue} />
         </div>
 
         <Rise delay={16}>
@@ -101,7 +106,7 @@ export const Hook: React.FC = () => {
               letterSpacing: 1,
             }}
           >
-            دليل LUMIÈRE المختصر — تابع للنهاية
+            دليل لوموند المختصر — تابع للنهاية
           </p>
         </Rise>
       </AbsoluteFill>

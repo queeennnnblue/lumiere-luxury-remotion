@@ -154,8 +154,8 @@ export const TipFourCs: React.FC = () => (
         >
           ✨ توليفة الخبراء: قَطع ممتاز + لون G–H + نقاء VS2–SI1
           <br />
-          <span style={{opacity: 0.8, fontWeight: 500, fontSize: 33}}>
-            = أقصى بريق بأفضل ميزانية
+          <span style={{color: COLORS.paperBag, fontWeight: 800, fontSize: 35}}>
+            💎 وفي لوموند… نوفر لك أفضل مواصفات الـ 4C بأفضل سعر
           </span>
         </div>
       </Rise>

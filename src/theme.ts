@@ -1,5 +1,6 @@
-// ألوان البراند — LUMIÈRE
+// ألوان البراند — LOMOND لوموند
 export const COLORS = {
+  green: '#3E7C4F', // صح أخضر للخيار الأفضل
   creme: '#EEE4DA', // Base
   powderBlue: '#94B1C8', // Cool accent
   dustyPink: '#C8A49F', // Warm complement

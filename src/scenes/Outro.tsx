@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {COLORS, FONTS} from '../theme';
-import {Divider, RingIcon, Rise, Sparkle, useAppear} from '../ui/atoms';
+import {Divider, Logo, RingIcon, Rise, Sparkle, useAppear} from '../ui/atoms';
 
 // الخاتمة — دعوة للحفظ والمتابعة
 export const Outro: React.FC = () => {
@@ -71,16 +71,7 @@ export const Outro: React.FC = () => {
 
         <Rise delay={80}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, marginTop: 24}}>
-            <div
-              style={{
-                fontFamily: FONTS.latin,
-                fontSize: 66,
-                letterSpacing: 16,
-                color: COLORS.creme,
-              }}
-            >
-              LUMIÈRE
-            </div>
+            <Logo width={520} dark />
             <div
               style={{
                 fontFamily: FONTS.body,
@@ -90,7 +81,7 @@ export const Outro: React.FC = () => {
                 color: COLORS.paperBag,
               }}
             >
-              لـومـيـيـر — مجوهرات فاخرة
+              لـومـونـد — مجوهرات فاخرة
             </div>
           </div>
         </Rise>

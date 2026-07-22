@@ -1,8 +1,10 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
@@ -171,6 +173,22 @@ export const TipBadge: React.FC<{n: number; accent: string}> = ({n, accent}) => 
   );
 };
 
+// شعار LOMOND (يتحول للأبيض على الخلفيات الداكنة)
+export const Logo: React.FC<{width?: number; dark?: boolean; style?: React.CSSProperties}> = ({
+  width = 260,
+  dark,
+  style,
+}) => (
+  <Img
+    src={staticFile('logo.png')}
+    style={{
+      width,
+      filter: dark ? 'brightness(0) invert(0.93) sepia(0.12)' : undefined,
+      ...style,
+    }}
+  />
+);
+
 // علامة البراند أسفل الشاشة
 export const Watermark: React.FC<{dark?: boolean}> = ({dark}) => (
   <div
@@ -182,20 +200,10 @@ export const Watermark: React.FC<{dark?: boolean}> = ({dark}) => (
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      gap: 4,
+      gap: 8,
     }}
   >
-    <div
-      style={{
-        fontFamily: FONTS.latin,
-        fontSize: 34,
-        letterSpacing: 10,
-        color: dark ? COLORS.creme : COLORS.burgundy,
-        opacity: 0.85,
-      }}
-    >
-      LUMIÈRE
-    </div>
+    <Logo width={210} dark={dark} style={{opacity: 0.9}} />
     <div
       style={{
         fontFamily: FONTS.body,
@@ -205,7 +213,7 @@ export const Watermark: React.FC<{dark?: boolean}> = ({dark}) => (
         opacity: 0.6,
       }}
     >
-      لـومـيـيـر — مجوهرات فاخرة
+      لـومـونـد — مجوهرات فاخرة
     </div>
   </div>
 );
