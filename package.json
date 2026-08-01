@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "remotion studio",
     "render": "remotion render LumiereGuide out/lumiere-guide-4k.mp4 --scale=2 --crf=16",
-    "render:preview": "remotion render LumiereGuide out/lumiere-guide-preview.mp4"
+    "render:preview": "remotion render LumiereGuide out/lumiere-guide-preview.mp4",
+    "render:ig": "for i in 01-Manifesto 02-Karats 03-Quote 04-Product-Ring 05-FourCs 06-Product-Necklace 07-Palette 08-LabVsNatural 09-CustomDesign 10-Product-Earrings 11-RingSize 12-Testimonial 13-Myths 14-Product-Bracelet 15-FinalCta; do remotion still \"IG$i\" \"out/instagram/IG$i.png\" --scale=2; done"
   },
   "dependencies": {
     "@remotion/cli": "4.0.246",
