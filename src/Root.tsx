@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition, Still} from 'remotion';
 import {LumiereGuideVideo} from './Video';
 import {IG_POSTS} from './instagram/posts';
+import {IgGridPreview} from './instagram/GridPreview';
 import './fonts';
 
 // التصميم على 1080×1920، والتصدير بـ --scale=2 → دقة 4K عمودية (2160×3840)
@@ -19,5 +20,7 @@ export const RemotionRoot: React.FC = () => (
     {IG_POSTS.map(({id, component}) => (
       <Still key={id} id={id} component={component} width={1080} height={1350} />
     ))}
+    {/* معاينة الجريد كاملاً كما يظهر في البروفايل */}
+    <Still id="IG-GridPreview" component={IgGridPreview} width={1092} height={2286} />
   </>
 );

@@ -520,7 +520,7 @@ export const Ig13Myths: React.FC = () => (
           ❌ {t}
         </div>
       ))}
-      <IgSub size={34}>الحقيقة كاملة داخل السلايدات ← لا تشترين بالاسم، اشتري بالفهم</IgSub>
+      <IgSub size={32}>لا تشترين بالاسم… اشتري بالفهم</IgSub>
     </Center>
     <IgSwipe />
     <IgFooter />
