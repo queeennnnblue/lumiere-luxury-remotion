@@ -313,9 +313,14 @@ Carat (‏0.90 بدل 1.00 = شكل متطابق وسعر أقل بكثير) →
 5. **إعادة التدوير:** كل كاروسيل تعليمي يتحول لاحقاً لريلز ٣٠ ثانية بنفس
    سكريبتات خطة التيك توك (`content-plan-2weeks.md`).
 
-## 🛠️ الرندر
+## 🛠️ الرندر والتعديل
 
 ```bash
 npm install
-npm run render:ig   # يصدّر الـ ١٥ بوست PNG بدقة 2160×2700 إلى out/instagram/
+npm run render:ig    # يصدّر الـ ١٥ بوست PNG بدقة 2160×2700 إلى out/instagram/
+npm run build:pptx   # يولّد نسخة PPTX قابلة للتعديل في كانفا
+npm run check:pptx   # فحص الحدود وفيض النصوص داخل الـ PPTX
 ```
+
+👈 **للتعديل بنفسك من كانفا أو أي برنامج ثاني:** راجعي
+[`instagram-editable-guide.md`](./instagram-editable-guide.md)
