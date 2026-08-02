@@ -33,6 +33,16 @@ export const fontsReady = Promise.all([
     weight: '800',
   }),
   loadFont({
+    family: 'Tinos',
+    url: staticFile('fonts/Tinos-Regular.ttf'),
+    weight: '400',
+  }),
+  loadFont({
+    family: 'Tinos',
+    url: staticFile('fonts/Tinos-Bold.ttf'),
+    weight: '700',
+  }),
+  loadFont({
     family: 'Playfair Display',
     url: staticFile('fonts/PlayfairDisplay.ttf'),
     weight: '400 900',

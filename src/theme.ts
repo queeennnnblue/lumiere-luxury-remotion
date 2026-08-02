@@ -15,6 +15,7 @@ export const FONTS = {
   heading: 'Amiri', // سيريف عربي فاخر للعناوين
   body: 'Tajawal', // سانس عربي نظيف للنصوص
   latin: 'Playfair Display', // للشعار اللاتيني
+  serif: 'Tinos, "Times New Roman", serif', // سيريف بطابع Times New Roman للاتيني والأرقام
 };
 
 // أرقام هندية (٠١٢٣٤٥٦٧٨٩)
